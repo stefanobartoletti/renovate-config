@@ -1,0 +1,33 @@
+{
+  "name": "@stefanobartoletti/renovate-config",
+  "version": "1.0.0",
+  "description": "Personal shareable Renovate config extending Nuxt config without grouping all non-major updates",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stefanobartoletti/renovate-config.git"
+  },
+  "keywords": [
+    "renovate",
+    "renovate-config",
+    "nuxt"
+  ],
+  "author": "Stefano Bartoletti",
+  "license": "MIT",
+  "renovate-config": {
+    "default": {
+      "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+      "description": "Personal Renovate config extending Nuxt config without grouping all non-major updates",
+      "extends": [
+        "config:recommended",
+        "github>nuxt/renovate-config-nuxt"
+      ],
+      "packageRules": [
+        {
+          "description": "Disable grouping of all non-major updates (override group:allNonMajor from nuxt config)",
+          "matchUpdateTypes": ["minor", "patch"],
+          "groupName": null
+        }
+      ]
+    }
+  }
+}
