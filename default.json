@@ -1,0 +1,15 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Personal Renovate config extending Nuxt config without grouping all non-major updates",
+  "extends": [
+    "config:recommended",
+    "github>nuxt/renovate-config-nuxt"
+  ],
+  "packageRules": [
+    {
+      "description": "Disable grouping of all non-major updates (override group:allNonMajor from nuxt config)",
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": null
+    }
+  ]
+}
