@@ -1,15 +1,92 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": "Personal Renovate config extending Nuxt config without grouping all non-major updates",
+  "description": "My shareable Renovate config",
   "extends": [
     "config:recommended",
-    "github>nuxt/renovate-config-nuxt"
+    "group:test",
+    "group:vite",
+    ":maintainLockFilesWeekly",
+    ":semanticCommitTypeAll(chore)",
+    "schedule:earlyMondays"
   ],
+  "rangeStrategy": "bump",
+  "prHourlyLimit": 0,
+  "labels": [
+    "dependencies"
+  ],
+  "vulnerabilityAlerts": {
+    "labels": [
+      "security"
+    ],
+    "enabled": true
+  },
   "packageRules": [
     {
-      "description": "Disable grouping of all non-major updates (override group:allNonMajor from nuxt config)",
-      "matchUpdateTypes": ["minor", "patch"],
-      "groupName": null
+      "groupName": "patch-level",
+      "matchPackageNames": [
+        "*"
+      ],
+      "matchUpdateTypes": [
+        "patch"
+      ]
+    },
+    {
+      "groupName": "validators",
+      "matchPackageNames": [
+        "@vee-validate/**",
+        "yup",
+        "zod"
+      ],
+      "matchUpdateTypes": [
+        "patch",
+        "minor"
+      ]
+    },
+    {
+      "groupName": "@iconify-json",
+      "matchPackageNames": [
+        "@iconify-json/**"
+      ],
+      "matchUpdateTypes": [
+        "patch",
+        "minor"
+      ]
+    },
+    {
+      "groupName": "three.js",
+      "matchPackageNames": [
+        "@tresjs/**",
+        "three"
+      ],
+      "matchUpdateTypes": [
+        "patch",
+        "minor"
+      ]
+    },
+    {
+      "groupName": "eslint",
+      "matchUpdateTypes": [
+        "patch",
+        "minor"
+      ],
+      "matchPackageNames": [
+        "/^eslint$/",
+        "/^@.*eslint.*$/"
+      ]
+    },
+    {
+      "groupName": "tailwindcss",
+      "matchPackageNames": [
+        "daisyui",
+        "/^.*tailwindcss.*$/"
+      ],
+      "matchUpdateTypes": [
+        "patch",
+        "minor"
+      ]
     }
+  ],
+  "postUpdateOptions": [
+    "pnpmDedupe"
   ]
 }
