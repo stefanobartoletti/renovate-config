@@ -23,25 +23,12 @@
   },
   "packageRules": [
     {
-      "groupName": "validators",
-      "matchPackageNames": [
-        "@vee-validate/**",
-        "yup",
-        "zod"
-      ],
-      "matchUpdateTypes": [
-        "patch",
-        "minor"
-      ]
-    },
-    {
       "groupName": "@iconify-json",
       "matchPackageNames": [
         "@iconify-json/**"
       ],
       "matchUpdateTypes": [
-        "patch",
-        "minor"
+        "major"
       ]
     },
     {
@@ -51,19 +38,7 @@
         "three"
       ],
       "matchUpdateTypes": [
-        "patch",
-        "minor"
-      ]
-    },
-    {
-      "groupName": "eslint",
-      "matchUpdateTypes": [
-        "patch",
-        "minor"
-      ],
-      "matchPackageNames": [
-        "/^eslint$/",
-        "/^@.*eslint.*$/"
+        "major"
       ]
     },
     {
@@ -73,8 +48,7 @@
         "/^.*tailwindcss.*$/"
       ],
       "matchUpdateTypes": [
-        "patch",
-        "minor"
+        "major"
       ]
     }
   ],
