@@ -3,6 +3,7 @@
   "description": "My shareable Renovate config",
   "extends": [
     "config:recommended",
+    "group:allNonMajor",
     "group:test",
     "group:vite",
     ":maintainLockFilesWeekly",
@@ -21,15 +22,6 @@
     "enabled": true
   },
   "packageRules": [
-    {
-      "groupName": "patch-level",
-      "matchPackageNames": [
-        "*"
-      ],
-      "matchUpdateTypes": [
-        "patch"
-      ]
-    },
     {
       "groupName": "validators",
       "matchPackageNames": [
