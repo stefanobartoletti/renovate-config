@@ -2,7 +2,7 @@
   "name": "@stefanobartoletti/renovate-config",
   "type": "module",
   "version": "1.0.0",
-  "packageManager": "pnpm@10.33.0",
+  "packageManager": "pnpm@11.1.2",
   "description": "My shareable Renovate config",
   "author": "Stefano Bartoletti (https://github.com/stefanobartoletti/)",
   "license": "MIT",
