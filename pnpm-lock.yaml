@@ -9,7 +9,7 @@ importers:
   .:
     devDependencies:
       '@stefanobartoletti/eslint-config':
-        specifier: ^4.0.4
+        specifier: ^4.0.6
         version: 4.0.6(@vue/compiler-sfc@3.5.27)(eslint@10.4.0)(typescript@5.9.3)
       eslint:
         specifier: ^10.4.0
