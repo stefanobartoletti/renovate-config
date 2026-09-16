@@ -8,7 +8,8 @@
     "group:vite",
     ":maintainLockFilesWeekly",
     ":semanticCommitTypeAll(chore)",
-    "schedule:earlyMondays"
+    "schedule:earlyMondays",
+    "security:minimumReleaseAgeNpm"
   ],
   "rangeStrategy": "bump",
   "prHourlyLimit": 0,
