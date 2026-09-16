@@ -167,10 +167,10 @@ importers:
   .:
     devDependencies:
       '@stefanobartoletti/eslint-config':
-        specifier: ^6.0.1
+        specifier: ^6.1.1
         version: 6.1.1(@typescript-eslint/typescript-estree@8.70.0(typescript@6.0.3))(@typescript-eslint/utils@8.70.0(eslint@10.10.0(jiti@2.7.0))(typescript@6.0.3))(@vue/compiler-sfc@3.5.42)(eslint@10.10.0(jiti@2.7.0))(globals@17.12.0)(tailwindcss@4.3.3)(typescript@6.0.3)
       eslint:
-        specifier: ^10.8.0
+        specifier: ^10.10.0
         version: 10.10.0(jiti@2.7.0)
 
 packages:
