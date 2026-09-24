@@ -13,14 +13,12 @@
   ],
   "rangeStrategy": "bump",
   "prHourlyLimit": 0,
-  "labels": [
-    "dependencies"
-  ],
+  "labels": ["dependencies"],
   "vulnerabilityAlerts": {
-    "labels": [
-      "security"
-    ],
-    "enabled": true
+    "labels": ["security"]
+  },
+  "toolSettings": {
+    "nodeMaxMemory": 1536
   },
   "packageRules": [
     {
@@ -28,9 +26,7 @@
       "matchPackageNames": [
         "@iconify-json/**"
       ],
-      "matchUpdateTypes": [
-        "major"
-      ]
+      "matchUpdateTypes": ["major"]
     },
     {
       "groupName": "three.js",
@@ -38,22 +34,14 @@
         "@tresjs/**",
         "three"
       ],
-      "matchUpdateTypes": [
-        "major"
-      ]
+      "matchUpdateTypes": ["major"]
     },
     {
       "groupName": "tailwindcss",
       "matchPackageNames": [
-        "daisyui",
         "/^.*tailwindcss.*$/"
       ],
-      "matchUpdateTypes": [
-        "major"
-      ]
+      "matchUpdateTypes": ["major"]
     }
-  ],
-  "postUpdateOptions": [
-    "pnpmDedupe"
   ]
 }
