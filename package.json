@@ -19,7 +19,7 @@
     "lint:fix": "eslint . --fix"
   },
   "devDependencies": {
-    "@stefanobartoletti/eslint-config": "^6.1.1",
-    "eslint": "^10.10.0"
+    "@stefanobartoletti/eslint-config": "^6.3.1",
+    "eslint": "^10.11.0"
   }
 }
