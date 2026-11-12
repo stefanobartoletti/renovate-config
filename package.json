@@ -2,7 +2,7 @@
   "name": "@stefanobartoletti/renovate-config",
   "type": "module",
   "version": "1.0.0",
-  "packageManager": "pnpm@12.16.1",
+  "packageManager": "pnpm@12.18.0",
   "description": "My shareable Renovate config",
   "author": "Stefano Bartoletti (https://github.com/stefanobartoletti/)",
   "license": "MIT",
@@ -19,7 +19,7 @@
     "lint:fix": "eslint . --fix"
   },
   "devDependencies": {
-    "@stefanobartoletti/eslint-config": "^6.3.1",
-    "eslint": "^10.13.0"
+    "@stefanobartoletti/eslint-config": "^6.3.2",
+    "eslint": "^10.14.0"
   }
 }
